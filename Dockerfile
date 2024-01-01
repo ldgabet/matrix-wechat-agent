@@ -70,7 +70,7 @@ RUN mv /root/wine /home/user/ \
   && su user -c 'winetricks -q ole32' \
   && su user -c 'winetricks -q riched20' \
   && su user -c 'winetricks -q riched30' \
-  # && su user -c 'winetricks -q win7' \
+  && su user -c 'winetricks -q win7' \
   \
   # Clean
   && rm -fr /home/user/{.cache,tmp}/* \
